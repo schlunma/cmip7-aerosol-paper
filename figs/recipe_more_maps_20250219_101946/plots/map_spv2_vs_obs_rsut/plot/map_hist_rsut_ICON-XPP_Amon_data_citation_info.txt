@@ -1,0 +1,3 @@
+Additional data citation information was found, for which no entry is available in the bibtex file:
+- Zhang et al., Study of Cloud and Water Processes in Weather and Climate through Satellite Observations (submitted)
+- see MPIM/DWD publications

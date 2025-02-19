@@ -1,0 +1,1501 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<prov:document xmlns:recipe="https://www.esmvaltool.org/recipe" xmlns:preprocessor="https://www.esmvaltool.org/preprocessor" xmlns:author="https://www.esmvaltool.org/author" xmlns:attribute="https://www.esmvaltool.org/attribute" xmlns:task="https://www.esmvaltool.org/task" xmlns:software="https://www.esmvaltool.org/software" xmlns:file="https://www.esmvaltool.org/file" xmlns:project="https://www.esmvaltool.org/project" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20190101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2017_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20110101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20110101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10725 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 062954</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2013_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:47:00 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data8/adaptor.mars.internal-1588063617.6319904-28123-7-87f3ec37-374e-4a5a-a598-c538b32e8d9e.nc /cache/tmp/87f3ec37-374e-4a5a-a598-c538b32e8d9e-adaptor.mars.internal-1588063617.6325822-28123-4-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20160101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10203 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 111251</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20030101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10754 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 010415</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20020101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2012_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:46:46 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data7/adaptor.mars.internal-1588063603.4345584-18009-7-902f1b03-2ca5-4c91-bf43-c6d980e63b6d.nc /cache/tmp/902f1b03-2ca5-4c91-bf43-c6d980e63b6d-adaptor.mars.internal-1588063603.435085-18009-3-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:activity prov:id="task:map_spv2_vs_obs_tas/tas"/>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20130101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20553 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 091128</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20170101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30508 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 103047</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20060101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20140101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20160101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30161 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 095040</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20120101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10670 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 042834</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20070101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10668 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 002354</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20070101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20553 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 042919</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20080101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20160101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20040101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20507 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241224 215153</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20180101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20180101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20190101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20060101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20458 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241224 233210</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2019_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2009_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="recipe:recipe_more_maps.yml">
+    <attribute:description>ICON-XPP maps.</attribute:description>
+    <attribute:references>[]</attribute:references>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20020101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10753 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 001252</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20050101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:activity prov:id="task:map_spv2_vs_obs_tas/plot"/>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20190101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30117 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 131410</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20110101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10670 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 034751</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20160101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20650 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 093823</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2015_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20080101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20050101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20150101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20650 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 085824</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2004_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20120101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10354 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 083134</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20100101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20555 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 070204</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2005_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:45:24 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data3/adaptor.mars.internal-1588063519.7645168-1229-27-2b6fe076-eb36-4ede-9d7b-5504df4f317a.nc /cache/tmp/2b6fe076-eb36-4ede-9d7b-5504df4f317a-adaptor.mars.internal-1588063519.7650607-1229-9-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20050101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20458 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241224 224152</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/work/map_spv2_vs_obs_tas/plot/map_hist_tas_ICON-XPP_Amon.nc">
+    <attribute:caption>Map plot of Near-Surface Air Temperature of dataset SPv2 relative to ERA5 (2002-2019).</attribute:caption>
+    <attribute:facet_used_for_labels>alias</attribute:facet_used_for_labels>
+    <attribute:group_variables_by>variable_group</attribute:group_variables_by>
+    <attribute:long_names>['Near-Surface Air Temperature']</attribute:long_names>
+    <attribute:plot_filename>{plot_type}_{group}_{real_name}_{dataset}_{mip}</attribute:plot_filename>
+    <attribute:plot_folder>{plot_dir}</attribute:plot_folder>
+    <attribute:plot_types>('world map',)</attribute:plot_types>
+    <attribute:plots>{'map': {'cbar_label': 'ΔT [°C]', 'show_stats': False, 'pyplot_kwargs': {'suptitle': {'t': None}}, 'plot_kwargs': {'default': {'cmap': 'bwr', 'norm': 'centered', 'extend': 'both', 'levels': [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]}}}}</attribute:plots>
+    <attribute:scheduler_address>tcp://127.0.0.1:38075</attribute:scheduler_address>
+    <attribute:script>plot</attribute:script>
+    <attribute:script_file>monitor/multi_datasets.py</attribute:script_file>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20190101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20650 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 114411</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20020101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2011_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:46:36 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data3/adaptor.mars.internal-1588063592.506414-28638-3-ccb85e37-4074-4c8e-96af-9b132882a353.nc /cache/tmp/ccb85e37-4074-4c8e-96af-9b132882a353-adaptor.mars.internal-1588063592.5069678-28638-2-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20040101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10355 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 015452</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20150101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30406 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 091039</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2002_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2009_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:46:13 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data7/adaptor.mars.internal-1588063563.9769676-11118-36-55c6cd91-23a7-405b-8cdd-ce248899756a.nc /cache/tmp/55c6cd91-23a7-405b-8cdd-ce248899756a-adaptor.mars.internal-1588063563.9775727-11118-18-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20120101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:activity prov:id="software:esmvaltool==2.12.0.dev148+g9aadaca83"/>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20060101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30204 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 033647</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/plot"/>
+    <prov:trigger prov:ref="recipe:recipe_more_maps.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.12.0.dev148+g9aadaca83"/>
+  </prov:wasStartedBy>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20030101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20462 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241224 210154</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20170101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20140101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20140101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10492 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 095141</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20110101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10354 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 075146</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20110101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+    <prov:trigger prov:ref="recipe:recipe_more_maps.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.12.0.dev148+g9aadaca83"/>
+  </prov:wasStartedBy>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2018_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2022-07-25 15:23:01 UTC by era5cli 1.3.1: reanalysis-era5-single-levels-monthly-means {'variable': '2m_temperature', 'year': 2018, 'month': ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'], 'time': ['00:00'], 'format': 'netcdf', 'product_type': 'monthly_averaged_reanalysis'}
+2022-07-25 15:22:56 GMT by grib_to_netcdf-2.25.1: /opt/ecmwf/mars-client/bin/grib_to_netcdf.bin -S param -o /cache/data2/adaptor.mars.internal-1658762576.3129096-16195-6-c43f78e6-0ed7-45a8-8182-f2d25f74582f.nc /cache/tmp/c43f78e6-0ed7-45a8-8182-f2d25f74582f-adaptor.mars.internal-1658762571.4545913-16195-11-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20090101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20090101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10764 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 044749</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20060101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30405 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 012844</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20040101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2013_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20080101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10252 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 051942</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2014_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20100101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10726 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 053858</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2010_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:46:24 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data3/adaptor.mars.internal-1588063581.0133739-12120-21-d9686ecb-974b-43be-a176-e1fd55073e6f.nc /cache/tmp/d9686ecb-974b-43be-a176-e1fd55073e6f-adaptor.mars.internal-1588063581.0139449-12120-9-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20020101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30405 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241228 220658</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:dataset>ICON-XPP</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:exp>tvp1826_011</attribute:exp>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:group>hist</attribute:group>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>ICON</attribute:project>
+    <attribute:raw_name>t_2m</attribute:raw_name>
+    <attribute:recipe_dataset_index>0</attribute:recipe_dataset_index>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:units>K</attribute:units>
+    <attribute:var_type>atm_2d_ml</attribute:var_type>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:climate_statistics>{'operator': 'mean', 'period': 'full'}</preprocessor:climate_statistics>
+    <preprocessor:convert_units>{'units': 'celsius'}</preprocessor:convert_units>
+    <preprocessor:multi_model_statistics>{'statistics': ['mean'], 'span': 'overlap', 'groupby': ['group'], 'keep_input_datasets': False, 'output_products': defaultdict(&lt;class 'dict'&gt;, {'hist': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc}, '': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc}})}</preprocessor:multi_model_statistics>
+    <preprocessor:regrid>{'target_grid': Dataset:
+{'diagnostic': 'map_spv2_vs_obs_tas',
+ 'variable_group': 'tas',
+ 'dataset': 'ERA5',
+ 'project': 'native6',
+ 'mip': 'Amon',
+ 'short_name': 'tas',
+ 'alias': 'SPv2 relative to ERA5 (2002-2019)',
+ 'automatic_regrid': True,
+ 'family': 'E5',
+ 'frequency': 'mon',
+ 'grib_id': '167',
+ 'level': 'sf',
+ 'long_name': 'Near-Surface Air Temperature',
+ 'modeling_realm': ['atmos'],
+ 'original_short_name': 'tas',
+ 'preprocessor': 'create_map_tas_obs',
+ 'recipe_dataset_index': 3,
+ 'reference_dataset': 'ERA5',
+ 'reference_for_bias': True,
+ 'standard_name': 'air_temperature',
+ 'tier': 3,
+ 'timerange': '20020101/20191231',
+ 'tres': '1M',
+ 'type': 'reanaly',
+ 'typeid': '00',
+ 'units': 'K',
+ 'version': 'v1'}
+session: 'recipe_more_maps_20250219_101946', 'scheme': 'nearest'}</preprocessor:regrid>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compress': False, 'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20080101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10777 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 035605</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20190101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20306 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 115123</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20050101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10354 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 024542</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20060101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20180101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10203 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 123357</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20040101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20030101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30405 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241228 225746</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2018_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20090101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20553 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 061146</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20050101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20120101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2006_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:45:34 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data2/adaptor.mars.internal-1588063531.1969526-11189-1-0c77c056-2d47-4a3b-886d-f1307fdfc6c4.nc /cache/tmp/0c77c056-2d47-4a3b-886d-f1307fdfc6c4-adaptor.mars.internal-1588063531.1997805-11189-1-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2004_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:45:09 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data3/adaptor.mars.internal-1588063497.9061942-15055-19-606c4ba1-a7ca-4347-a867-79e6f10d0dcd.nc /cache/tmp/606c4ba1-a7ca-4347-a867-79e6f10d0dcd-adaptor.mars.internal-1588063497.9067447-15055-7-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20190101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2011_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20170101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20150101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2008_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20030101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20080101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2014_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:47:12 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data7/adaptor.mars.internal-1588063629.276881-18671-25-3b957021-6ad6-4723-a66d-9883e502902d.nc /cache/tmp/3b957021-6ad6-4723-a66d-9883e502902d-adaptor.mars.internal-1588063629.2774127-18671-10-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20140101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10670 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 054906</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20150101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20140101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10054 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 083035</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20050101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30405 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 003821</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:automatic_regrid>True</attribute:automatic_regrid>
+    <attribute:dataset>ERA5</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:family>E5</attribute:family>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:grib_id>167</attribute:grib_id>
+    <attribute:level>sf</attribute:level>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>native6</attribute:project>
+    <attribute:recipe_dataset_index>3</attribute:recipe_dataset_index>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:reference_for_bias>True</attribute:reference_for_bias>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:tier>3</attribute:tier>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:tres>1M</attribute:tres>
+    <attribute:type>reanaly</attribute:type>
+    <attribute:typeid>00</attribute:typeid>
+    <attribute:units>K</attribute:units>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <attribute:version>v1</attribute:version>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:climate_statistics>{'operator': 'mean', 'period': 'full'}</preprocessor:climate_statistics>
+    <preprocessor:convert_units>{'units': 'celsius'}</preprocessor:convert_units>
+    <preprocessor:multi_model_statistics>{'statistics': ['mean'], 'span': 'overlap', 'groupby': ['group'], 'keep_input_datasets': False, 'output_products': defaultdict(&lt;class 'dict'&gt;, {'hist': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc}, '': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc}})}</preprocessor:multi_model_statistics>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compress': False, 'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20150101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2016_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2021-07-26 14:15:50 UTC by era5cli 1.0.0: reanalysis-era5-single-levels-monthly-means {'variable': '2m_temperature', 'year': 2016, 'product_type': 'monthly_averaged_reanalysis', 'month': ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'], 'time': ['00:00'], 'format': 'netcdf'}
+2021-07-26 14:15:45 GMT by grib_to_netcdf-2.20.0: /opt/ecmwf/mars-client/bin/grib_to_netcdf -S param -o /cache/data9/adaptor.mars.internal-1627308944.9727654-6554-10-4ca5ce57-c1a4-4ae6-86db-feff2442c265.nc /cache/tmp/4ca5ce57-c1a4-4ae6-86db-feff2442c265-adaptor.mars.internal-1627308941.7143528-6554-11-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:dataset>ICON-XPP</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:exp>tvp1826_012</attribute:exp>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:group>hist</attribute:group>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>ICON</attribute:project>
+    <attribute:raw_name>t_2m</attribute:raw_name>
+    <attribute:recipe_dataset_index>1</attribute:recipe_dataset_index>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:units>K</attribute:units>
+    <attribute:var_type>atm_2d_ml</attribute:var_type>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:climate_statistics>{'operator': 'mean', 'period': 'full'}</preprocessor:climate_statistics>
+    <preprocessor:convert_units>{'units': 'celsius'}</preprocessor:convert_units>
+    <preprocessor:multi_model_statistics>{'statistics': ['mean'], 'span': 'overlap', 'groupby': ['group'], 'keep_input_datasets': False, 'output_products': defaultdict(&lt;class 'dict'&gt;, {'hist': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc}, '': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc}})}</preprocessor:multi_model_statistics>
+    <preprocessor:regrid>{'target_grid': Dataset:
+{'diagnostic': 'map_spv2_vs_obs_tas',
+ 'variable_group': 'tas',
+ 'dataset': 'ERA5',
+ 'project': 'native6',
+ 'mip': 'Amon',
+ 'short_name': 'tas',
+ 'alias': 'SPv2 relative to ERA5 (2002-2019)',
+ 'automatic_regrid': True,
+ 'family': 'E5',
+ 'frequency': 'mon',
+ 'grib_id': '167',
+ 'level': 'sf',
+ 'long_name': 'Near-Surface Air Temperature',
+ 'modeling_realm': ['atmos'],
+ 'original_short_name': 'tas',
+ 'preprocessor': 'create_map_tas_obs',
+ 'recipe_dataset_index': 3,
+ 'reference_dataset': 'ERA5',
+ 'reference_for_bias': True,
+ 'standard_name': 'air_temperature',
+ 'tier': 3,
+ 'timerange': '20020101/20191231',
+ 'tres': '1M',
+ 'type': 'reanaly',
+ 'typeid': '00',
+ 'units': 'K',
+ 'version': 'v1'}
+session: 'recipe_more_maps_20250219_101946', 'scheme': 'nearest'}</preprocessor:regrid>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compress': False, 'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20100101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10668 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 025700</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2017_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2022-07-25 15:23:01 UTC by era5cli 1.3.1: reanalysis-era5-single-levels-monthly-means {'variable': '2m_temperature', 'year': 2017, 'month': ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'], 'time': ['00:00'], 'format': 'netcdf', 'product_type': 'monthly_averaged_reanalysis'}
+2022-07-25 15:22:56 GMT by grib_to_netcdf-2.25.1: /opt/ecmwf/mars-client/bin/grib_to_netcdf.bin -S param -o /cache/data0/adaptor.mars.internal-1658762576.2611349-20635-17-fdfbfd9c-1b90-4400-8018-6e49bf819121.nc /cache/tmp/fdfbfd9c-1b90-4400-8018-6e49bf819121-adaptor.mars.internal-1658762571.4454417-20635-25-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/work/map_spv2_vs_obs_tas/plot/map_hist_tas_ICON-XPP_Amon.nc"/>
+    <prov:agent prov:ref="author:Schlund, Manuel"/>
+  </prov:wasAttributedTo>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20040101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20120101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10725 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 071021</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2003_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2012_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20030101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20110101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2008_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:45:56 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data8/adaptor.mars.internal-1588063552.5183418-12120-19-82d99313-1043-4475-adc4-d3ce6a2f4945.nc /cache/tmp/82d99313-1043-4475-adc4-d3ce6a2f4945-adaptor.mars.internal-1588063552.518919-12120-8-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2015_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2021-07-26 14:15:50 UTC by era5cli 1.0.0: reanalysis-era5-single-levels-monthly-means {'variable': '2m_temperature', 'year': 2015, 'product_type': 'monthly_averaged_reanalysis', 'month': ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'], 'time': ['00:00'], 'format': 'netcdf'}
+2021-07-26 14:15:45 GMT by grib_to_netcdf-2.20.0: /opt/ecmwf/mars-client/bin/grib_to_netcdf -S param -o /cache/data2/adaptor.mars.internal-1627308945.4028-11948-4-b49b5d32-4609-4da3-bb2d-02b3d1f13b2f.nc /cache/tmp/b49b5d32-4609-4da3-bb2d-02b3d1f13b2f-adaptor.mars.internal-1627308941.7044046-11948-2-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/work/map_spv2_vs_obs_tas/plot/map_hist_tas_ICON-XPP_Amon.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/plot"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20150101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10203 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 103245</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20040101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30405 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241228 234755</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20090101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10668 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 020557</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20140101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2003_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:44:45 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data0/adaptor.mars.internal-1588063479.8809185-12335-1-1965ce53-855b-49e4-bf09-3458603af91c.nc /cache/tmp/1965ce53-855b-49e4-bf09-3458603af91c-adaptor.mars.internal-1588063479.8829153-12335-1-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:agent prov:id="author:Schlund, Manuel">
+    <attribute:email>manuel.schlund@dlr.de</attribute:email>
+    <attribute:github>schlunma</attribute:github>
+    <attribute:institute>DLR, Germany</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0001-5251-0158</attribute:orcid>
+  </prov:agent>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20130101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10681 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 075032</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2002_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:44:33 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data4/adaptor.mars.internal-1588063468.260681-17485-9-1ce74d4e-83e4-4ad7-b01e-c492fe7878a5.nc /cache/tmp/1ce74d4e-83e4-4ad7-b01e-c492fe7878a5-adaptor.mars.internal-1588063468.2612188-17485-4-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20070101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20070101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30474 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 025119</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20130101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20060101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20130101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10670 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 050900</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20170101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10203 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20250103 115251</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2007_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20020101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20462 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241224 201155</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:dataset>ICON-XPP</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:exp>tvp1826_013</attribute:exp>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:group>hist</attribute:group>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>ICON</attribute:project>
+    <attribute:raw_name>t_2m</attribute:raw_name>
+    <attribute:recipe_dataset_index>2</attribute:recipe_dataset_index>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:units>K</attribute:units>
+    <attribute:var_type>atm_2d_ml</attribute:var_type>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:climate_statistics>{'operator': 'mean', 'period': 'full'}</preprocessor:climate_statistics>
+    <preprocessor:convert_units>{'units': 'celsius'}</preprocessor:convert_units>
+    <preprocessor:multi_model_statistics>{'statistics': ['mean'], 'span': 'overlap', 'groupby': ['group'], 'keep_input_datasets': False, 'output_products': defaultdict(&lt;class 'dict'&gt;, {'hist': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc}, '': {'mean': PreprocessorFile: /home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc}})}</preprocessor:multi_model_statistics>
+    <preprocessor:regrid>{'target_grid': Dataset:
+{'diagnostic': 'map_spv2_vs_obs_tas',
+ 'variable_group': 'tas',
+ 'dataset': 'ERA5',
+ 'project': 'native6',
+ 'mip': 'Amon',
+ 'short_name': 'tas',
+ 'alias': 'SPv2 relative to ERA5 (2002-2019)',
+ 'automatic_regrid': True,
+ 'family': 'E5',
+ 'frequency': 'mon',
+ 'grib_id': '167',
+ 'level': 'sf',
+ 'long_name': 'Near-Surface Air Temperature',
+ 'modeling_realm': ['atmos'],
+ 'original_short_name': 'tas',
+ 'preprocessor': 'create_map_tas_obs',
+ 'recipe_dataset_index': 3,
+ 'reference_dataset': 'ERA5',
+ 'reference_for_bias': True,
+ 'standard_name': 'air_temperature',
+ 'tier': 3,
+ 'timerange': '20020101/20191231',
+ 'tres': '1M',
+ 'type': 'reanaly',
+ 'typeid': '00',
+ 'units': 'K',
+ 'version': 'v1'}
+session: 'recipe_more_maps_20250219_101946', 'scheme': 'nearest'}</preprocessor:regrid>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compress': False, 'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20070101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2010_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20100101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20180101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20030101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20180101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20653 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241229 111112</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20020101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:dataset>ICON-XPP</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:group>hist</attribute:group>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:multi_model_statistics>histMean</attribute:multi_model_statistics>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>ICON</attribute:project>
+    <attribute:raw_name>t_2m</attribute:raw_name>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:units>K</attribute:units>
+    <attribute:var_type>atm_2d_ml</attribute:var_type>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_histMean_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20090101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20080101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l10668 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 011511</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20100101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20120101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20130101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20090101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2007_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2020-04-28 08:45:47 GMT by grib_to_netcdf-2.16.0: /opt/ecmwf/eccodes/bin/grib_to_netcdf -S param -o /cache/data7/adaptor.mars.internal-1588063543.4427714-24374-5-6939ab02-ae7e-4fca-8a50-2f85330f3653.nc /cache/tmp/6939ab02-ae7e-4fca-8a50-2f85330f3653-adaptor.mars.internal-1588063543.4434783-24374-2-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2016_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20100101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20170101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l20650 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 101830</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2005_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20160101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20180101T000000Z.nc">
+    <attribute:CDI>Climate Data Interface version 2.4.0 (https://mpimet.mpg.de/cdi)</attribute:CDI>
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:comment>Trang Van Pham (b364148) on l30064 (Linux 4.18.0-513.24.1.el8_9.x86_64 x86_64)</attribute:comment>
+    <attribute:grid_file_uri>http://icon-downloads.mpimet.mpg.de/grids/public/icon_grid_0030_R02B05_G.nc</attribute:grid_file_uri>
+    <attribute:history>/work/mh0287/m211032/Icon/Git_lev/icon.XPP.20240717/build.intel-hdext/icon.x.intel-hdext.61ae4995f at 20241225 105924</attribute:history>
+    <attribute:institution>Max Planck Institute for Meteorology/Deutscher Wetterdienst</attribute:institution>
+    <attribute:number_of_grid_used>30</attribute:number_of_grid_used>
+    <attribute:references>see MPIM/DWD publications</attribute:references>
+    <attribute:source>git@gitlab.dkrz.de:icon/icon-mpim.git@61ae4995fefae7f27914ac35b918a959a1255b46</attribute:source>
+    <attribute:title>ICON simulation</attribute:title>
+    <attribute:uuidOfHGrid>a668eac0-fe2e-11e4-9a47-e3e5371a87a7</attribute:uuidOfHGrid>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_012_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_012/tvp1826_012_atm_2d_ml_20130101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_more_maps.yml"/>
+    <prov:agent prov:ref="author:Schlund, Manuel"/>
+  </prov:wasAttributedTo>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20160101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_013_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_013/tvp1826_013_atm_2d_ml_20070101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_reanaly_v1_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2006_monthly.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+  <prov:entity prov:id="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc">
+    <attribute:alias>SPv2 relative to ERA5 (2002-2019)</attribute:alias>
+    <attribute:automatic_regrid>True</attribute:automatic_regrid>
+    <attribute:dataset>ERA5</attribute:dataset>
+    <attribute:diagnostic>map_spv2_vs_obs_tas</attribute:diagnostic>
+    <attribute:end_year>2019</attribute:end_year>
+    <attribute:family>E5</attribute:family>
+    <attribute:filename>/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:grib_id>167</attribute:grib_id>
+    <attribute:level>sf</attribute:level>
+    <attribute:long_name>Near-Surface Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:multi_model_statistics>MultiModelMean</attribute:multi_model_statistics>
+    <attribute:original_short_name>tas</attribute:original_short_name>
+    <attribute:preprocessor>create_map_tas_obs</attribute:preprocessor>
+    <attribute:project>native6</attribute:project>
+    <attribute:recipe_dataset_index>3</attribute:recipe_dataset_index>
+    <attribute:reference_dataset>ERA5</attribute:reference_dataset>
+    <attribute:reference_for_bias>True</attribute:reference_for_bias>
+    <attribute:short_name>tas</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2002</attribute:start_year>
+    <attribute:tier>3</attribute:tier>
+    <attribute:timerange>20020101/20191231</attribute:timerange>
+    <attribute:tres>1M</attribute:tres>
+    <attribute:type>reanaly</attribute:type>
+    <attribute:typeid>00</attribute:typeid>
+    <attribute:units>K</attribute:units>
+    <attribute:variable_group>tas</attribute:variable_group>
+    <attribute:version>v1</attribute:version>
+    <preprocessor:bias>{'bias_type': 'absolute'}</preprocessor:bias>
+    <preprocessor:remove_supplementary_variables>{}</preprocessor:remove_supplementary_variables>
+    <preprocessor:save>{'compute': False, 'filename': PosixPath('/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/native6_ERA5_MultiModelMean_Amon_tas_20020101-20191231.nc')}</preprocessor:save>
+  </prov:entity>
+  <prov:entity prov:id="file:/work/bd0854/DATA/ESMValTool2/RAWOBS/Tier3/ERA5/v1/mon/tas/era5_2m_temperature_2019_monthly.nc">
+    <attribute:Conventions>CF-1.6</attribute:Conventions>
+    <attribute:history>2022-07-25 15:23:01 UTC by era5cli 1.3.1: reanalysis-era5-single-levels-monthly-means {'variable': '2m_temperature', 'year': 2019, 'month': ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'], 'time': ['00:00'], 'format': 'netcdf', 'product_type': 'monthly_averaged_reanalysis'}
+2022-07-25 15:22:56 GMT by grib_to_netcdf-2.25.1: /opt/ecmwf/mars-client/bin/grib_to_netcdf.bin -S param -o /cache/data7/adaptor.mars.internal-1658762576.144881-32588-10-4f4d55b2-1d5d-42b5-bd74-afdb2d4f42e5.nc /cache/tmp/4f4d55b2-1d5d-42b5-bd74-afdb2d4f42e5-adaptor.mars.internal-1658762571.3760066-32588-17-tmp.grib</attribute:history>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/home/b/b309141/scratch/esmvaltool_output/recipe_more_maps_20250219_101946/preproc/map_spv2_vs_obs_tas/tas/ICON_ICON-XPP_tvp1826_011_atm_2d_ml_Amon_tas_20020101-20191231.nc"/>
+    <prov:usedEntity prov:ref="file:/work/mh0287/b364148/Icon/Git_lev/icon.nwp.hdext.intno/experiments/tvp1826_011/tvp1826_011_atm_2d_ml_20170101T000000Z.nc"/>
+    <prov:activity prov:ref="task:map_spv2_vs_obs_tas/tas"/>
+  </prov:wasDerivedFrom>
+</prov:document>
