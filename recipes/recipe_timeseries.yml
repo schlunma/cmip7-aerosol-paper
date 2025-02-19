@@ -1,0 +1,208 @@
+documentation:
+  title: Basic Model Evaluation (Time series).
+  description: Time series of basic physical variables of the climate system.
+  authors:
+  - schlund_manuel
+
+
+datasets:
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_001}
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_002}
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_003}
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_011}
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_012}
+  - {dataset: ICON-XPP, project: ICON, timerange: 18500101/20201231, exp: tvp1826_013}
+
+
+preprocessors:
+  create_global_annual_mean_time_series:
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    area_statistics:
+      operator: mean
+    annual_statistics:
+      operator: mean
+  create_global_annual_mean_time_series_pr:
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    area_statistics:
+      operator: mean
+    annual_statistics:
+      operator: mean
+    convert_units:
+      units: mm day-1
+  create_global_annual_mean_time_series_tas:
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    area_statistics:
+      operator: mean
+    annual_statistics:
+      operator: mean
+    convert_units:
+      units: celsius
+
+
+diagnostics:
+  timeseries:
+    description: Time series for multiple variables.
+    khemes:
+    - phys
+    realms:
+    - atmos
+    variables:
+      pr:
+        preprocessor: create_global_annual_mean_time_series_pr
+        mip: Amon
+        additional_datasets:
+          - {project: OBS, dataset: GPCP-SG, type: atmos, version: 2.3, tier: 2, timerange: 19790101/20230430}
+          - {project: native6, dataset: ERA5, type: reanaly, version: v1, tier: 3, timerange: 19790101/20211231}
+        title: "Global Mean Precipitation (bias to GPCP-SG: 0.49 mm/day)"
+        ugrid: false
+        ylabel: Precipitation
+        ylabel_units: mm/day
+        supplementary_variables:
+          - {short_name: areacella, skip: true}
+          - {short_name: areacello, skip: true}
+          - {short_name: sftlf, skip: true}
+          - {short_name: sftof, skip: true}
+      rsut:
+        preprocessor: create_global_annual_mean_time_series
+        mip: Amon
+        additional_datasets:
+          - {project: OBS, dataset: CERES-EBAF, type: sat, version: Ed4.2, tier: 2, timerange: 20000331/20231130}
+          - {project: OBS, dataset: ISCCP-FH, type: sat, version: v0, tier: 2, timerange: 19840101/20161231}
+        title: "Global Mean TOA Outgoing Shortwave Radiation (bias to CERES-EBAF: 4.6 W/m$^2$)"
+        ugrid: false
+        ylabel: RSUT
+        ylabel_units: W/m$^2$
+        supplementary_variables:
+          - {short_name: areacella, skip: true}
+          - {short_name: areacello, skip: true}
+          - {short_name: sftlf, skip: true}
+          - {short_name: sftof, skip: true}
+      tas:
+        preprocessor: create_global_annual_mean_time_series_tas
+        mip: Amon
+        additional_datasets:
+          - {project: native6, dataset: ERA5, type: reanaly, version: v1, tier: 3, timerange: 19790101/20211231}
+          - {project: OBS, dataset: HadCRUT5, type: ground, version: 5.0.1.0-analysis, tier: 2, timerange: 19790101/20211231}
+        title: "Global Mean Near-Surface Air Temperature (bias to HadCRUT5: 0.0021 K)"
+        ugrid: false
+        ylabel: T
+        ylabel_units: "\xB0C"
+        supplementary_variables:
+          - {short_name: areacella, skip: true}
+          - {short_name: areacello, skip: true}
+          - {short_name: sftlf, skip: true}
+          - {short_name: sftof, skip: true}
+    additional_datasets:
+    - {project: CMIP6, dataset: '*', exp: historical, ensemble: r1i1p1f1, grid: '*', institute: '*', timerange: 18500101/20141231}
+    scripts:
+      plot:
+        plot_folder: '{plot_dir}'
+        plot_filename: '{plot_type}_{exp}_{real_name}_{dataset}_{mip}'
+        script: monitor/multi_datasets.py
+        facet_used_for_labels: alias
+        group_variables_by: variable_group
+        plots:
+          timeseries:
+            annual_mean_kwargs: false
+            gridline_kwargs: false
+            legend_kwargs:
+              loc: lower left
+            pyplot_kwargs:
+              title: '{title}'
+              xlabel: Year
+              ylabel: '{ylabel} [{ylabel_units}]'
+            plot_kwargs:
+              ICON_tvp1826_001:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C0
+              ICON_tvp1826_002:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C1
+              ICON_tvp1826_003:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C2
+              ICON_tvp1826_011:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C0
+                linestyle: dashed
+              ICON_tvp1826_012:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C1
+                linestyle: dashed
+              ICON_tvp1826_013:
+                label: null
+                linewidth: 1.25
+                zorder: 2.5
+                color: C2
+                linestyle: dashed
+              default:
+                color: lightgray
+                label: null
+                linewidth: 0.75
+                zorder: 1.0
+              OBS:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+              OBS6:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+                linestyle: dashdot
+              native6:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+                linestyle: dotted
+              OBS_CERES-EBAF:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+              OBS_GPCP-SG:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+              OBS_HadCRUT5:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+              OBS_ISCCP-FH:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+                linestyle: dashed
+              native6_ERA5:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+                linestyle: dotted
+              ERA5:
+                color: black
+                label: '{dataset}'
+                linewidth: 1.0
+                zorder: 2.4
+                linestyle: dotted

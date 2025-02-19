@@ -1,0 +1,344 @@
+documentation:
+  title: ICON-XPP maps.
+  description: ICON-XPP maps.
+  authors:
+  - schlund_manuel
+
+datasets_spv2_early: &datasets_spv2_early
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, timerange: 19600101/19800101, group: hist, alias: SPv2 relative to PI (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, timerange: 19600101/19800101, group: hist, alias: SPv2 relative to PI (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, timerange: 19600101/19800101, group: hist, alias: SPv2 relative to PI (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: slo1826-1960-1980, group: pi, alias: icon-xpp pi-control (1960-1979), reference_for_bias: true}
+
+datasets_spv2_late: &datasets_spv2_late
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, timerange: 20000101/20200101, group: hist, alias: SPv2 (2000-2019) relative to SPv2 (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, timerange: 20000101/20200101, group: hist, alias: SPv2 (2000-2019) relative to SPv2 (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, timerange: 20000101/20200101, group: hist, alias: SPv2 (2000-2019) relative to SPv2 (1960-1979)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, timerange: 19600101/19800101, group: ref,  alias: icon-xpp hist SPv1 (1960-1979), reference_for_bias: true}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, timerange: 19600101/19800101, group: ref,  alias: icon-xpp hist SPv1 (1960-1979), reference_for_bias: true}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, timerange: 19600101/19800101, group: ref,  alias: icon-xpp hist SPv1 (1960-1979), reference_for_bias: true}
+
+datasets_spv2: &datasets_spv2
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, group: hist}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, group: hist}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, group: hist}
+
+supplementary_variables: &supplementary_variables
+  - short_name: areacella
+    skip: true
+  - short_name: areacello
+    skip: true
+  - short_name: sftlf
+    skip: true
+  - short_name: sftof
+    skip: true
+
+plot_diag: &plot_diag
+  plot_folder: "{plot_dir}"
+  plot_filename: "{plot_type}_{group}_{real_name}_{dataset}_{mip}"
+  script: monitor/multi_datasets.py
+  facet_used_for_labels: alias
+  group_variables_by: variable_group
+
+map_tas: &map_tas
+  cbar_label: ΔT [°C]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: bwr
+      norm: centered
+      levels: [-1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
+
+map_pr: &map_pr
+  cbar_label: ΔPrecipitation [mm/day]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: BrBG
+      norm: centered
+      levels: [-1.2, -1.0, -0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4, 0.6, 0.8]
+
+map_rsut: &map_rsut
+  cbar_label: ΔRSUT [W/m$^2$]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: bwr
+      norm: centered
+      levels: [-10, -8, -6, -4, -2, 0, 2, 4, 6]
+
+preprocessors:
+  create_map_pr:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    convert_units:
+      units: mm day-1
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_tas:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    convert_units:
+      units: celsius
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_rsut:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_pr_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    convert_units:
+      units: mm day-1
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_tas_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    convert_units:
+      units: celsius
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_rsut_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+
+diagnostics:
+
+  map_spv2_early_tas:
+    additional_datasets: *datasets_spv2_early
+    variables:
+      tas:
+        preprocessor: create_map_tas
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_tas
+
+  map_spv2_early_pr:
+    additional_datasets: *datasets_spv2_early
+    variables:
+      pr:
+        preprocessor: create_map_pr
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_pr
+
+  map_spv2_early_rsut:
+    additional_datasets: *datasets_spv2_early
+    variables:
+      rsut:
+        preprocessor: create_map_rsut
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_rsut
+
+  map_spv2_late_tas:
+    additional_datasets: *datasets_spv2_late
+    variables:
+      tas:
+        preprocessor: create_map_tas
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_tas
+
+  map_spv2_late_pr:
+    additional_datasets: *datasets_spv2_late
+    variables:
+      pr:
+        preprocessor: create_map_pr
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_pr
+
+  map_spv2_late_rsut:
+    additional_datasets: *datasets_spv2_late
+    variables:
+      rsut:
+        preprocessor: create_map_rsut
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_rsut
+
+  map_spv2_2002_2020_vs_obs_tas:
+    additional_datasets: *datasets_spv2
+    variables:
+      tas:
+        preprocessor: create_map_tas_obs
+        reference_dataset: HadCRUT5
+        mip: Amon
+        timerange: 20020101/20191231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to HadCRUT5 (2002-2019)
+        additional_datasets:
+          - {project: OBS, dataset: HadCRUT5, type: ground, version: 5.0.1.0-analysis, tier: 2, alias: HadCRUT5, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_tas
+            plot_kwargs:
+              default:
+                cmap: bwr
+                norm: centered
+                extend: both
+                levels: [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+  map_spv2_2002_2020_vs_obs_pr:
+    additional_datasets: *datasets_spv2
+    variables:
+      pr:
+        preprocessor: create_map_pr_obs
+        reference_dataset: GPCP-SG
+        mip: Amon
+        timerange: 20020101/20191231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to GPCP-SG (2002-2019)
+        additional_datasets:
+          - {project: OBS, dataset: GPCP-SG, type: atmos, version: 2.3, tier: 2, alias: GPCP-SG, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_pr
+            plot_kwargs:
+              default:
+                cmap: BrBG
+                norm: centered
+                extend: both
+                levels: [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+  map_spv2_2002_2020_vs_obs_rsut:
+    additional_datasets: *datasets_spv2
+    variables:
+      rsut:
+        preprocessor: create_map_rsut_obs
+        reference_dataset: CERES-EBAF
+        mip: Amon
+        timerange: 20020101/20191231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to CERES-EBAF (2002-2019)
+        additional_datasets:
+          - {project: OBS, dataset: CERES-EBAF, type: sat, version: Ed4.2, tier: 2, alias: CERES-EBAF, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_rsut
+            plot_kwargs:
+              default:
+                cmap: bwr
+                norm: centered
+                extend: both
+                levels: [-60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60]

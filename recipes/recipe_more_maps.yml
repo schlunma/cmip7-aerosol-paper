@@ -1,0 +1,293 @@
+documentation:
+  title: ICON-XPP maps.
+  description: ICON-XPP maps.
+  authors:
+  - schlund_manuel
+
+datasets_spv2_vs_spv1: &datasets_spv2_vs_spv1
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, timerange: 20020101/20200101, group: hist, alias: SPv2 relative to SPv1 (2002-2019)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, timerange: 20020101/20200101, group: hist, alias: SPv2 relative to SPv1 (2002-2019)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, timerange: 20020101/20200101, group: hist, alias: SPv2 relative to SPv1 (2002-2019)}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_001, timerange: 20020101/20200101, group: ref,  alias: SPv1 (2002-2019), reference_for_bias: true}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_002, timerange: 20020101/20200101, group: ref,  alias: SPv1 (2002-2019), reference_for_bias: true}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_003, timerange: 20020101/20200101, group: ref,  alias: SPv1 (2002-2019), reference_for_bias: true}
+
+datasets_spv2: &datasets_spv2
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_011, group: hist}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_012, group: hist}
+  - {project: ICON, dataset: ICON-XPP, exp: tvp1826_013, group: hist}
+
+supplementary_variables: &supplementary_variables
+  - short_name: areacella
+    skip: true
+  - short_name: areacello
+    skip: true
+  - short_name: sftlf
+    skip: true
+  - short_name: sftof
+    skip: true
+
+plot_diag: &plot_diag
+  plot_folder: "{plot_dir}"
+  plot_filename: "{plot_type}_{group}_{real_name}_{dataset}_{mip}"
+  script: monitor/multi_datasets.py
+  facet_used_for_labels: alias
+  group_variables_by: variable_group
+
+map_tas: &map_tas
+  cbar_label: ΔT [°C]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: bwr
+      norm: centered
+
+map_pr: &map_pr
+  cbar_label: ΔPrecipitation [mm/day]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: BrBG
+      norm: centered
+
+map_rsut: &map_rsut
+  cbar_label: ΔRSUT [W/m$^2$]
+  show_stats: false
+  pyplot_kwargs:
+    suptitle:
+      t: null
+  plot_kwargs:
+    default:
+      cmap: bwr
+      norm: centered
+
+preprocessors:
+  create_map_pr:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    convert_units:
+      units: mm day-1
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_tas:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    convert_units:
+      units: celsius
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_rsut:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_pr_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    convert_units:
+      units: mm day-1
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_tas_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    convert_units:
+      units: celsius
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+  create_map_rsut_obs:
+    custom_order: true
+    climate_statistics:
+      operator: mean
+      period: full
+    regrid:
+      target_grid: reference_dataset
+      scheme: nearest
+    multi_model_statistics:
+      statistics: [mean]
+      span: overlap
+      groupby: [group]
+      keep_input_datasets: false
+    bias:
+      bias_type: absolute
+
+
+diagnostics:
+
+  map_spv2_vs_spv1_tas:
+    additional_datasets: *datasets_spv2_vs_spv1
+    variables:
+      tas:
+        preprocessor: create_map_tas
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_tas
+
+  map_spv2_vs_spv1_pr:
+    additional_datasets: *datasets_spv2_vs_spv1
+    variables:
+      pr:
+        preprocessor: create_map_pr
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_pr
+
+  map_spv2_vs_spv1_rsut:
+    additional_datasets: *datasets_spv2_vs_spv1
+    variables:
+      rsut:
+        preprocessor: create_map_rsut
+        mip: Amon
+        supplementary_variables: *supplementary_variables
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_rsut
+
+  map_spv2_vs_obs_tas:
+    additional_datasets: *datasets_spv2
+    variables:
+      tas:
+        preprocessor: create_map_tas_obs
+        reference_dataset: ERA5
+        mip: Amon
+        timerange: 20020101/20191231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to ERA5 (2002-2019)
+        additional_datasets:
+          - {project: native6, dataset: ERA5, type: reanaly, version: v1, tier: 3, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_tas
+            plot_kwargs:
+              default:
+                cmap: bwr
+                norm: centered
+                extend: both
+                levels: [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+  map_spv2_vs_obs_pr:
+    additional_datasets: *datasets_spv2
+    variables:
+      pr:
+        preprocessor: create_map_pr_obs
+        reference_dataset: ERA5
+        mip: Amon
+        timerange: 20020101/20191231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to ERA5 (2002-2019)
+        additional_datasets:
+          - {project: native6, dataset: ERA5, type: reanaly, version: v1, tier: 3, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_pr
+            plot_kwargs:
+              default:
+                cmap: BrBG
+                norm: centered
+                extend: both
+                levels: [-7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+  map_spv2_vs_obs_rsut:
+    additional_datasets: *datasets_spv2
+    variables:
+      rsut:
+        preprocessor: create_map_rsut_obs
+        reference_dataset: ISCCP-FH
+        mip: Amon
+        timerange: 20020101/20161231
+        supplementary_variables: *supplementary_variables
+        alias: SPv2 relative to ISCCP-FH (2002-2016)
+        additional_datasets:
+          - {project: OBS, dataset: ISCCP-FH, type: sat, version: v0, tier: 2, reference_for_bias: true}
+    scripts:
+      plot:
+        <<: *plot_diag
+        plots:
+          map:
+            <<: *map_rsut
+            plot_kwargs:
+              default:
+                cmap: bwr
+                norm: centered
+                extend: both
+                levels: [-60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60]
