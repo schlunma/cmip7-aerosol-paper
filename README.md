@@ -37,7 +37,6 @@ This will download the configuration file to
 `~/.config/esmvaltool/config-user.yml`. Add/modify the following lines:
 
 ```yml
-# Contents of ~/.config/esmvaltool/config-user.yml
 output_dir: ~/esmvaltool_output  # path where ESMValTool output is written
 search_esgf: when_missing  # enable automatic downloads for CMIP data
 download_dir: ~/climate_data  # directory where downloaded data is stored
@@ -67,7 +66,7 @@ esmvaltool run /path/to/recipe.yml
 
 ### Figure files (`figs/`)
 
-Contains raw figures and corresponding netCDF files.
+Contains raw figures and corresponding netCDF, provenance and citation files.
 
 ### ESMValTool recipes (`recipes/`)
 
