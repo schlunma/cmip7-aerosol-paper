@@ -7,12 +7,9 @@ Fiedler et al. (2025) with ESMValTool.
 
 To reproduce these results, a [development
 installation](https://docs.esmvaltool.org/en/latest/quickstart/installation.html#install-from-source)
-of ESMValTool and ESMValCore is necessary using the [main
-branch](https://github.com/ESMValGroup/ESMValTool/tree/main) of ESMValTool and
-the [icon-xpp branch](https://github.com/ESMValGroup/ESMValCore/tree/icon-xpp)
-of ESMValCore. The new features will be released with ESMValTool v2.13.0 in the
-future. Once this is done, a regular installation of ESMValTool will be
-sufficient.
+of ESMValTool and ESMValCore is necessary. The new features will be released
+with ESMValTool v2.13.0 in the future. Once this is done, a regular
+installation of ESMValTool will be sufficient.
 
 Before ESMValTool can be used, input data need to be acquired:
 
