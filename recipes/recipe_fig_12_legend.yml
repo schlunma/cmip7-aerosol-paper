@@ -1,0 +1,110 @@
+documentation:
+  title: Basic Model Evaluation (Time series).
+  description: Time series of basic physical variables of the climate system.
+  authors:
+  - schlund_manuel
+
+
+preprocessors:
+  create_global_annual_mean_time_series_tas:
+    regrid:
+      target_grid: 2x2
+      scheme: nearest
+    area_statistics:
+      operator: mean
+    convert_units:
+      units: celsius
+    multi_model_statistics:
+      span: overlap
+      statistics: [mean]
+      exclude: [ICON-XPP]
+
+
+diagnostics:
+  timeseries:
+    description: Time series for multiple variables.
+    themes:
+    - phys
+    realms:
+    - atmos
+    variables:
+      tas:
+        preprocessor: create_global_annual_mean_time_series_tas
+        mip: Amon
+        ugrid: false
+        supplementary_variables:
+          - {short_name: areacella, skip: true}
+          - {short_name: areacello, skip: true}
+          - {short_name: sftlf, skip: true}
+          - {short_name: sftof, skip: true}
+    additional_datasets:
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_001}
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_002}
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_003}
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_011}
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_012}
+      - {dataset: ICON-XPP, project: ICON, timerange: 20200101/20201231, exp: tvp1826_013}
+      - {project: CMIP6, dataset: '*', exp: historical, ensemble: r1i1p1f1, grid: '*', institute: '*', timerange: 20140101/20141231}
+    scripts:
+      plot:
+        plot_folder: '{plot_dir}'
+        plot_filename: '{plot_type}_{exp}_{real_name}_{dataset}_{mip}'
+        script: monitor/multi_datasets.py
+        facet_used_for_labels: alias
+        group_variables_by: variable_group
+        plots:
+          timeseries:
+            gridline_kwargs: false
+            legend_kwargs:
+              loc: center left
+              bbox_to_anchor: [1.05, 0.5]
+              borderaxespad: 0.0
+            plot_kwargs:
+              ICON_tvp1826_001:
+                label: icon-xpp ens1 (SPv1)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C0
+              ICON_tvp1826_002:
+                label: icon-xpp ens2 (SPv1)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C1
+              ICON_tvp1826_003:
+                label: icon-xpp ens3 (SPv1)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C2
+              ICON_tvp1826_011:
+                label: icon-xpp ens1 (SPv2)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C0
+                linestyle: dashed
+              ICON_tvp1826_012:
+                label: icon-xpp ens2 (SPv2)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C1
+                linestyle: dashed
+              ICON_tvp1826_013:
+                label: icon-xpp ens3 (SPv2)
+                linewidth: 2.0
+                zorder: 2.5
+                color: C2
+                linestyle: dashed
+              default:
+                color: lightgray
+                label: null
+                linewidth: 1.0
+                zorder: 1.0
+              CMIP6_CESM2:
+                color: lightgray
+                label: individual simulations from CMIP6 models
+                linewidth: 1.0
+                zorder: 1.0
+              MultiModelMean:
+                color: gray
+                label: CMIP6 multi-model mean
+                linewidth: 2.0
+                zorder: 1.1
